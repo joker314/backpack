@@ -43,7 +43,7 @@
     x.onload = function() {
       var current_backpack = x.responseText;
       var parsed = JSON.parse(current_backpack);
-      parsed.push(obj);
+      parsed.unshift(obj);
       var new_backpack = JSON.stringify(parsed);
 
       var y = new XMLHttpRequest();
